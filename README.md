@@ -1,2 +1,4 @@
-# odoo_guide
-Odoo 17 Installation guide
+# Odoo 17 Installation guide
+## Update Linux dependences
+
+`apt update && apt upgrade`
