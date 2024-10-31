@@ -56,5 +56,21 @@ Temporary folder to finish the installation:<br><br>
 `sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list'`<br>
 `sudo apt update`<br>
 `sudo apt upgrade`<br>
-`sudo apt install pgadmin4-web`<br>
-`sudo /usr/pgadmin4/bin/setup-web.sh`<br>
+
+## Create user and database for new odoo instance
+`su postgres`<br>
+`psql -c "CREATE USER admin_bd_test WITH PASSWORD 'test_pass';"`<br>
+`psql -c "CREATE DATABASE bd_test;"`<br>
+`psql -c "GRANT ALL ON DATABASE bd_test TO admin_bd_test;"`<br>
+`psql -c "ALTER DATABASE bd_test OWNER TO admin_bd_test;"`
+
+## Create Odoo config file
+`su odoo_user`<br>
+`/opt/odoo/odoo-bin -r admin_bd_test -w test_pass --db_host localhost -d bd_test -i base --addons-path=addons --without-demo=all -s --stop-after-init`<br>
+`cat /opt/odoo/.odoorc`
+
+## Add logpath into config file
+`logfile = /var/log/odoo/log.txt`
+
+## Run Odoo
+`./odoo-bin`
