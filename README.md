@@ -66,7 +66,7 @@ Temporary folder to finish the installation:<br><br>
 
 ## Create Odoo config file
 `su odoo_user`<br>
-`/opt/odoo/odoo-bin -r admin_bd_test -w test_pass --db_host localhost -d bd_test -i base --addons-path=addons --without-demo=all -s --stop-after-init`<br>
+`/opt/odoo/odoo-bin -r admin_bd_test -w test_pass --db_host localhost -d bd_test -i base --addons-path=/opt/odoo/addons --without-demo=all -s --stop-after-init`<br>
 `cat /opt/odoo/.odoorc`
 
 ## Add logpath into config file
