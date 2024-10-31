@@ -10,7 +10,7 @@
 
 ## Installation of packages: Postgre, Node, Git & Python<br>
 Verify PostgreSQL version.<br><br>
-`sudo apt install postgresql postgresql-server-dev-14 git python3 python3-pip build-essential python3-dev libldap2-dev libsas12-dev python3-setuptools libjpeg-dev nodejs npm postgresql-client -y`
+`sudo apt install postgresql postgresql-server-dev-16 git python3 python3-pip build-essential python3-dev libldap2-dev libsas12-dev python3-setuptools libjpeg-dev nodejs npm postgresql-client -y`
 
 ## Clone latest version of odoo
 `sudo git clone --depth 1 branch 17.0 https://github.com/odoo/odoo /opt/odoo`<br><br>
