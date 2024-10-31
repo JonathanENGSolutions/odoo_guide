@@ -33,4 +33,7 @@ In case of error: already exists, delete '.bash_history' and try again.<br><br>
 Try again
 
 ## Odoo dependencies installation
-`sudo pip3 install -r /opt/odoo/requirements.txt`
+`sudo pip3 install -r /opt/odoo/requirements.txt --break-system-packages`
+
+## Installation of wkhtmltopdf utility
+`sudo apt install fontconfig xfonts-base xfonts75dpi -y`
