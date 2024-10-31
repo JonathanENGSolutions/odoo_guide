@@ -1,4 +1,4 @@
-# Odoo 17 Installation guide - Nov 2024
+# Odoo 17 local Installation guide - Nov 2024
 ## Update Linux dependences
 
 `sudo apt update`<br>
