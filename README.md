@@ -1,4 +1,4 @@
-# Odoo 17 Installation guide
+# Odoo 17 Installation guide - Nov 2024
 ## Update Linux dependences
 
 `sudo apt update`<br>
@@ -13,7 +13,7 @@ Verify PostgreSQL version.<br><br>
 `sudo apt install postgresql postgresql-server-dev-16 git python3 python3-pip build-essential python3-dev libldap2-dev libsasl2-dev python3-setuptools libjpeg-dev nodejs npm postgresql-client -y`
 
 ## Clone latest version of odoo
-`sudo git clone --depth 1 branch 17.0 https://github.com/odoo/odoo /opt/odoo`<br><br>
+`sudo git clone --depth 1 --branch 17.0 https://github.com/odoo/odoo /opt/odoo`<br>
 
 In case of error: already exists, delete '.bash_history' and try again.<br><br>
 `sudo rm /opt/odoo/.bash_history`
@@ -29,7 +29,8 @@ In case of error: already exists, delete '.bash_history' and try again.<br><br>
 
 ## Install interfaz C for Python
 `sudo pip3 install cffi`<br>
-`sudo rm /usr/lib/python3/dist-packages/_cffi_backend.cpython-310-x86_64-linux-gnu.so`
+`sudo rm /usr/lib/python3/dist-packages/_cffi_backend.cpython-310-x86_64-linux-gnu.so`<br><br>
+Try again
 
 ## Odoo dependencies installation
 `sudo pip3 install -r /opt/odoo/requirements.txt`
