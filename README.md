@@ -36,4 +36,10 @@ Try again
 `sudo pip3 install -r /opt/odoo/requirements.txt --break-system-packages`
 
 ## Installation of wkhtmltopdf utility
-`sudo apt install fontconfig xfonts-base xfonts-75dpi -y`
+`sudo apt install fontconfig xfonts-base xfonts-75dpi -y`<br>
+Temporary folder to finish the installation:<br>
+`cd /tmp`<br>
+`wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.bookworm_amd64.deb`<br>
+`sudo dpkg -i wkhtmltox_0.12.6.1-3.bookworm_amd64.deb`<br>
+`sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin/`<br>
+`sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin`
