@@ -48,3 +48,13 @@ Temporary folder to finish the installation:<br><br>
 `sudo passwd postgres`<br>
 `su postgres`<br>
 `psql -c "ALTER USER postgres WITH PASSWORD 'pass_postgres_bd';"`<br>
+`exit`
+
+## pgAdmin4 Installation
+`sudo apt install curl`<br>
+`curl -fsSL https://wwww.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/pgadmin.gpg`<br>
+`sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list'`<br>
+`sudo apt update`<br>
+`sudo apt upgrade`<br>
+`sudo apt install pgadmin4-web`<br>
+`sudo /usr/pgadmin4/bin/setup-web.sh`<br>
