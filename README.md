@@ -28,7 +28,7 @@ In case of error: already exists, delete '.bash_history' and try again.<br><br>
 `sudo chown odoo_user:odoo_user /var/log/odoo/ -R`
 
 ## Install interfaz C for Python
-`sudo pip3 install cffi`<br>
+`sudo pip3 install cffi --break-system-packages`<br>
 `sudo rm /usr/lib/python3/dist-packages/_cffi_backend.cpython-310-x86_64-linux-gnu.so`<br><br>
 Try again
 
