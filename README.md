@@ -52,7 +52,7 @@ Temporary folder to finish the installation:<br><br>
 
 ## pgAdmin4 Installation
 `sudo apt install curl`<br>
-`curl -fsSL https://wwww.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/pgadmin.gpg`<br>
+`curl -fsSL https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/pgadmin.gpg`<br>
 `sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list'`<br>
 `sudo apt update`<br>
 `sudo apt upgrade`<br>
