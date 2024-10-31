@@ -36,4 +36,4 @@ Try again
 `sudo pip3 install -r /opt/odoo/requirements.txt --break-system-packages`
 
 ## Installation of wkhtmltopdf utility
-`sudo apt install fontconfig xfonts-base xfonts75dpi -y`
+`sudo apt install fontconfig xfonts-base xfonts-75dpi -y`
