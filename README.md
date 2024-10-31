@@ -73,4 +73,5 @@ Temporary folder to finish the installation:<br><br>
 `logfile = /var/log/odoo/log.txt`
 
 ## Run Odoo
+`cd /opt/odoo/`<br>
 `./odoo-bin`
