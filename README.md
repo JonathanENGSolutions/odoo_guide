@@ -43,3 +43,8 @@ Temporary folder to finish the installation:<br><br>
 `sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb`<br>
 `sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin/`<br>
 `sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin`
+
+## Postgres user management
+`sudo passwd postgres`<br>
+`su postgres`<br>
+`psql -c "ALTER USER postgres WITH PASSWORD 'pass_postgres_bd';"`<br>
