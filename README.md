@@ -42,7 +42,7 @@ Temporary folder to finish the installation:<br><br>
 `wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb`<br>
 `sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb`<br>
 `sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin/`<br>
-`sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin`
+`sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin/`
 
 ## Postgres user management
 `sudo passwd postgres`<br>
@@ -62,7 +62,8 @@ Temporary folder to finish the installation:<br><br>
 `psql -c "CREATE USER admin_bd_test WITH PASSWORD 'test_pass';"`<br>
 `psql -c "CREATE DATABASE bd_test;"`<br>
 `psql -c "GRANT ALL ON DATABASE bd_test TO admin_bd_test;"`<br>
-`psql -c "ALTER DATABASE bd_test OWNER TO admin_bd_test;"`
+`psql -c "ALTER DATABASE bd_test OWNER TO admin_bd_test;"`<br>
+`exit`
 
 ## Create Odoo config file
 `su odoo_user`<br>
